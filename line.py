@@ -16,7 +16,7 @@ def line():
     print(f'\nDados los siguientes puntos:\n\tP1 ({x1}, {P1})\n\tP2 ({x2}, {P2})')
     C1= P1 - P2
     C2= x1 - x2
-    c= math.sqrt(C1*2 + C2*2)
+    c= math.sqrt(C1**2 + C2**2)
     
 
     print(f'\nLa distancia entre ellos es: {c}')
