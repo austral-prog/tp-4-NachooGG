@@ -11,13 +11,13 @@ def line():
     print(f"Para la siguiente ecuación:\n\tY = {A}X + {B}")
     
     
-    Y_3 = A * X1 + B
-    Y_4 = A * X2 + B
+    Y_3 = A*X1 + B
+    Y_4 = A*X2 + B
     
   
     
     print(f"\nDados los siguientes puntos:")
-    print(f"\tP1 ({X1}, {Y_3})")
-    print(f"\tP2 ({X2}, {Y_4})")
+    print(f"\n\tP1 ({X1}, {Y_3})")
+    print(f"\n\tP2 ({X2}, {Y_4})")
     distancia = ((X2 - X1)**2 + (Y_4 - Y_3)**2)**(1/2)
     print(f"\nLa distancia entre los dos puntos sobre la recta es: {distancia}")
