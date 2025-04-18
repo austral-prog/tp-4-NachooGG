@@ -1,23 +1,18 @@
 def line():
-    A = float(input("Ingrese el coeficiente A: "))
-    B = float(input("Ingrese el coeficiente B: "))
-    X1 = float(input("Ingrese el coeficiente X1: "))
-    X2 = float(input("Ingrese el coeficiente X2: "))
-    print(f"El coeficiente A de su ecuación de la recta es: {A}")
-    print(f"El coeficiente B de su ecuación de la recta es: {B}")
-    print(f"El coeficiente X1 de su ecuación de la recta es: {X1}")
-    print(f"El coeficiente X2 de su ecuación de la recta es: {X2}\n")
+    a = float(input("Ingrese coeficiente A: "))
+    b = float(input("Ingrese coeficiente B: "))
+    x1 = float(input("Ingrese el coeficiente X1: "))
+    x2 = float(input("Ingrese el coeficiente X2: "))
+    print(f'El coeficiente A de su ecuación de la recta es: {a}')
+    print(f'El coeficiente B de su ecuación de la recta es: {b}')
+    print(f'El coeficiente X1 de su ecuación de la recta es: {x1}')
+    print(f'El coeficiente X2 de su ecuación de la recta es: {x2}')
+    P1 = a*x1+b
+    P2 = a*x2+b
+    print(f'\nPara la siguiente ecuación:\n\tY = {a}X + {b}')
 
-    print(f"Para la siguiente ecuación:\n\tY = {A}X + {B}")
-    
-    
-    Y_3 = A*X1 + B
-    Y_4 = A*X2 + B
-    
-  
-    
-    print(f"\nDados los siguientes puntos:")
-    print(f"\n\tP1 ({X1}, {Y_3})")
-    print(f"\n\tP2 ({X2}, {Y_4})")
-    distancia = ((X2 - X1)**2 + (Y_4 - Y_3)**2)**(1/2)
-    print(f"\nLa distancia entre los dos puntos sobre la recta es: {distancia}")
+
+    print(f'\nDados los siguientes puntos:\n\tP1 ({x1}, {P1})\n\tP2 ({x2}, {P2})')
+    C1= P1 - P2
+    C2= x1 - x2
+    c= math.sqrt(C1**2 + C2**2)
